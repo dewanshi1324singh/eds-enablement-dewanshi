@@ -12,12 +12,12 @@
 
 :root {
   /* colors */
-  --background-color: #0ff;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: magenta;
-  --link-color: #3b63fb;
-  --link-hover-color: red;
+  --background-color: #fbf8f3;
+  --light-color: #f1ece1;
+  --dark-color: #21362a;
+  --text-color: #1c1c1c;
+  --link-color: #c1571f;
+  --link-hover-color: #8f3f16;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -107,8 +107,9 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   scroll-margin: 40px;
 }
 
@@ -179,16 +180,19 @@ button.button {
   max-width: 100%;
   margin: 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  padding: 0.6em 1.4em;
   font: inherit;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   line-height: 1.25;
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 a.button[aria-disabled="true"],
@@ -322,4 +326,8 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.highlight {
+  border-top: 4px solid var(--link-color);
 }

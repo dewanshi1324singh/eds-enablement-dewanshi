@@ -4,9 +4,11 @@
 
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
   background-color: var(--banner-background-color);
   color: var(--banner-text-color);
   overflow: hidden;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
 }
 
 .banner.dark {
